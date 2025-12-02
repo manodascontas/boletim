@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sistema Escolar – SEDUC</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>Sistema Escolar – Portal SEDUC</header>
+
+<!-- LOGIN -->
+<div id="loginBox">
+    <h2>Acesso ao Sistema</h2>
+    <input type="text" id="username" placeholder="Digite seu nome">
+    <button onclick="login()">Entrar</button>
+</div>
+
+<!-- PAINEL -->
+<div id="painel" style="display:none;">
+    <h2>Bem-vindo ao Sistema Escolar</h2>
+    <div id="tipoAcesso"></div>
+</div>
+
+<!-- TABELA -->
+<div id="tableWrapper" style="display:none;">
+    <h3>Rendimento Escolar – 8 Disciplinas</h3>
+    <table id="tabelaAlunos">
+        <thead>
+            <tr>
+                <th>Aluno</th>
+                <th>Português</th>
+                <th>Matemática</th>
+                <th>História</th>
+                <th>Geografia</th>
+                <th>Ciências</th>
+                <th>Inglês</th>
+                <th>Artes</th>
+                <th>Educação Física</th>
+                <th>Média</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script src="scipt.js"></script>
+
+</body>
+</html>
